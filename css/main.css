@@ -37,9 +37,18 @@
  footer, header, hgroup, menu, nav, section {
  	display: block;
  }
- body {
- 	line-height: 1;
- }
+
+ html{overflow-y:scroll;} /*Forces a scrollbar when the viewport is larger than the website's content CSS3 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #919191;
+    background-color: #232323;
+    line-height: 1;
+}
  ol, ul {
  	list-style: none;
  }
@@ -55,6 +64,9 @@
  	border-collapse: collapse;
  	border-spacing: 0;
  }
+
+ /*Added in stuff */
+ li.last{margin-right:0;}
 
 body, html{
   width:100%;
@@ -132,5 +144,5 @@ footer{
   background: #bbb;
   position: absolute;
   bottom: 0px;
-  padding:0px;
+  padding:20px 0;
 }
