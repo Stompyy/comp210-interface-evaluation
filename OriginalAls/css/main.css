@@ -65,8 +65,7 @@ body {
  	border-spacing: 0;
  }
 
- /*Added in stuff */
- li.last{margin-right:0;}
+
 
 body, html{
   width:100%;
@@ -84,6 +83,103 @@ h2{
   padding:4px;
 }
 
+ /*Added in stuff */
+ li.last{margin-right:0;}
+/* ----------------------------------------------Wrapper-------------------------------------*/
+ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
+
+ .row1, .row1 a{color:#C0BAB6; background-color:#333333;}
+ .row2 {color:#979797; background-image:url("background.png"); background-repeat:no-repeat;}
+ .row2 a{color:#FF9900;}
+ .row3, .row3 a{color:#919191; background-color:#232323;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: normal;
+}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header {padding: 20px 0;}
+
+#header #hgroup {float: left; margin: 0 0 20px 0; }
+#header #hgroup h1, #header #hgroup h2 {
+            font-weight: normal;
+            font-style: normal;
+            text-transform: none;
+        }
+#header #hgroup h1 {
+            font-size: 36px;
+        }
+#header #hgroup h2 {
+            font-size: 13px;
+        }
+#header form {
+        display: block;
+        width: 290px;
+        float: right;
+        margin: 20px 0;
+        padding: 0;
+    }
+#header form input {
+            display: block;
+            float: left;
+            width: 200px;
+            margin: 0;
+            padding: 5px;
+            color: #C0BAB6;
+            background-color: #232323;
+            border: 1px solid #666666;
+        }
+#header form #sf_submit {
+            display: block;
+            float: right;
+            width: 70px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background-color: #FF9900;
+            border: none;
+            cursor: pointer;
+        }
+#header nav {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+        color: #C0BAB6;
+        background-color: #232323;
+        clear: both; }
+#header nav ul {
+            padding: 0 20px; }
+#header nav li {
+            display: inline;
+            margin-right: 25px;
+            text-transform: uppercase; }
+#header nav li.last { margin-right: 0; }
+#header nav li a { color: #C0BAB6; background-color: #232323; }
+#header nav li a:hover {color: #FF9900; background-color: #232323; }
+
+
 .main-container{
   width:960px;
   background:#eee;
@@ -92,11 +188,14 @@ h2{
   overflow: auto;
   padding-bottom:80px;
 }
+header {height:100px;}
+/*
 header{
   width:100%;
   height:100px;
   background: #aaa;
 }
+*/
 .content{
   width:100%;
   min-height:400px;
