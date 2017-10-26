@@ -1,4 +1,4 @@
-w/*
+ w/*
 HTML 5 Template Name: Basic 90
 File: Layout CSS
 Author: OS Templates
@@ -172,4 +172,9 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 .align-right{
     float:right;
+    margin-bottom:15px;
+}
+.align_left{
+    float:left;
+    margin-top:15px;
 }
